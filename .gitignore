@@ -6,7 +6,7 @@
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
-/carflyCheckpoint4/vendor/
+/vendor/
 /.env
 ###< symfony/framework-bundle ###
 
