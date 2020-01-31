@@ -136,7 +136,7 @@ class User
     {
         if (!$this->circuits->contains($circuits)) {
             $this->circuits[] = $circuits;
-            $circuits->setRelation($this);
+            $circuits->setCircuits($this);
         }
 
         return $this;
@@ -147,8 +147,8 @@ class User
         if ($this->circuits->contains($circuits)) {
             $this->circuits->removeElement($circuits);
             // set the owning side to null (unless already changed)
-            if ($circuits->getRelation() === $this) {
-                $circuits->setRelation(null);
+            if ($circuits->getCircuits() === $this) {
+                $circuits->setCircuits(null);
             }
         }
 

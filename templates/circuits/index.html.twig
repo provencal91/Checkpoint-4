@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CARFLY{% endblock %}
+
+{% block body %}
+    <section class="container">
+        <section id="auth-buttons">
+            <button onclick='location.href="{{path("app_car")}}"'  class="auth-button">OUR CARS</button>
+            <button onclick='location.href="{{path('app_circuit')}}"' class="auth-button">OUR CIRCUITS</button>
+            <button onclick='location.href="{{path('user_new')}}"' class="auth-button">SCHEDULE</button>
+            <button onclick='location.href="{{path('schedule_index')}}"' class="auth-button">TICKETING</button>
+            <button onclick='location.href="{{path('app_contact')}}"' class="auth-button">CONTACT</button>
+        </section>
+    </section>
+    <h1>OUR CIRCUITS</h1>
+
+
+    <div class="info-cars">
+        <img src="{{ asset('build/images/circuit1.jpg') }}" alt="carOne">
+        Name of circuits:  <br>
+        Places:  <br>
+        Distance:  <br>
+    </div>
+    <div class="info-cars2">
+        <img src="{{ asset('build/images/circuit2.jpg') }}" alt="carTwo">
+        Name of circuits:  <br>
+        Places:  <br>
+        Distance:  <br>
+    </div>
+    <div class="info-cars3">
+        <img src="{{ asset('build/images/circuit3.jpg') }}" alt="carThree">
+        Name of circuits:  <br>
+        Places:  <br>
+        Distance:  <br>
+    </div>
+{% endblock %}
