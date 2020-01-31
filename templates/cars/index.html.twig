@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CARFLY{% endblock %}
+
+{% block body %}
+    <section class="container">
+        <section id="auth-buttons">
+            <button onclick='location.href="{{path("app_car")}}"'  class="auth-button">OUR CARS</button>
+            <button onclick='location.href="{{path('app_circuit')}}"' class="auth-button">OUR CIRCUITS</button>
+            <button onclick='location.href="{{path('user_new')}}"' class="auth-button">SCHEDULE</button>
+            <button onclick='location.href="{{path('schedule_index')}}"' class="auth-button">TICKETING</button>
+            <button onclick='location.href="{{path('app_contact')}}"' class="auth-button">CONTACT</button>
+        </section>
+
+    </section>
+
+    <h1>OUR CARS</h1>
+
+
+    <div class="info-cars">
+        <img src="{{ asset('build/images/1modele.jpg') }}" alt="carOne">
+                Name of cars:   <br>
+                Power:  <br>
+                Elevations:  <br>
+                years:  <br>
+    </div>
+    <div class="info-cars2">
+        <img src="{{ asset('build/images/2modele.jpg') }}" alt="carTwo">
+        Name of cars:  <br>
+        Power:  <br>
+        Elevations:  <br>
+        years:  <br>
+    </div>
+    <div class="info-cars3">
+        <img src="{{ asset('build/images/3modele.jpg') }}" alt="carThree">
+        Name of cars:  <br>
+        Power:  <br>
+        Elevations:  <br>
+        years:  <br>
+    </div>
+    <div class="info-cars4">
+        <img src="{{ asset('build/images/4modele.png') }}" alt="carFour">
+        Name of cars:  <br>
+        Power:  <br>
+        Elevations:  <br>
+        years:  <br>
+    </div>
+    <div class="info-cars5">
+        <img src="{{ asset('build/images/5modele.jpg') }}" alt="carFive">
+        Name of cars:  <br>
+        Power:  <br>
+        Elevations:  <br>
+        years:  <br>
+    </div>
+    <div class="info-cars6">
+        <img src="{{ asset('build/images/6modele.jpg') }}" alt="carSix">
+        Name of cars:  <br>
+        Power:  <br>
+        Elevations:  <br>
+        years:  <br>
+    </div>
+
+{% endblock %}

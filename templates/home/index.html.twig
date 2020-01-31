@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CARFLY{% endblock %}
+
+{% block body %}
+    <section class="auth-buttons">
+        <button onclick='location.href="{{path("app_car")}}"'  class="auth-button">OUR CARS</button>
+        <button onclick='location.href="{{path('app_circuit')}}"' class="auth-button">OUR CIRCUITS</button>
+        <button onclick='location.href="{{path('user_new')}}"' class="auth-button">SCHEDULE</button>
+        <button onclick='location.href="{{path('schedule_index')}}"' class="auth-button">TICKETING</button>
+        <button onclick='location.href="{{path('app_contact')}}"' class="auth-button">CONTACT</button>
+        <section id="selection">
+
+
+    <h1>CARFLY</h1>
+
+    <p>
+        Leader in the field, CARFLY offers you a <br>
+        whole new challenge, driving the brand new <br>
+        flying cars. During 2h, learn to fly with one <br>
+        of our instructor in order to challenge him <br>
+        and prove that you are the next Jules <br>
+        Bianchi
+    </p>
+        </section>
+    </section>
+{% endblock %}
